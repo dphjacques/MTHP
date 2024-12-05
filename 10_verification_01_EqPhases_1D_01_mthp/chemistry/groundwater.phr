@@ -1,0 +1,55 @@
+
+COUNTER SolNr @<@_BASENR+1>
+
+
+rt_numeric
+-openmp true
+end
+
+solution @=SolNr
+	units mol/kgw
+	water 1.0
+	temp 2.500000e+001
+	pH 6.960000e+000  
+	pe 1.670000e+000  
+	C(4) 3.940000e-003
+	Ca 6.920000e-003  
+	Cl 1.030000e-003 #charge 
+	Mg 1.960000e-003 
+	Na 1.300000e-003 
+	K 6.650000e-005  
+	Fe 5.392000e-005 
+	Mn(2) 4.730000e-005 
+	Al 1.270000e-007   
+	Si 1.940000e-003   
+	S(6) 7.480000e-003  
+end
+global_variable mult 0.35
+EQUILIBRIUM_PHASES @=SolNr
+	Calcite 0.000000e+000    0.0063 #@<@mult*1.95e-002       >
+	Siderite 0.000000e+000   .0018161 #@<@mult*4.22e-003       >
+	Gypsum 0.000000e+000     @<@mult*0.000000e+000   >
+	SiO2(a) 0.000000e+000    .14245  #@<@mult*4.070000e-001   >
+	Gibbsite 0.000000e+000   .0008812 #@<@mult*2.51e-003       >
+	Fe(OH)3(a) 0.000000e+000 .000651  #@<@mult*1.860000e-003   >
+end
+
+COUNTER BCSolNr @<@_BASENR+3001>
+ 
+solution @BCSolNr
+	units mol/kgw
+	water 1.0
+	temp 2.500000e+001
+	pH 3.99    # comp 12
+	pe 7.69   # comp 13
+	C(4) .000492   # comp 1
+	Ca .0108  # comp 2
+	Cl .000119 # charge # comp 3
+	Mg .000969  # comp 4
+	Na .00139   # comp 5
+	K .000793  # comp 6
+	Fe .030600199  # comp 7
+	Mn(2) 9.83E-06  # comp 8
+	Al .0043  # comp 9
+	Si .00208  # comp 10
+	S(6) 5E-2  # comp 11
