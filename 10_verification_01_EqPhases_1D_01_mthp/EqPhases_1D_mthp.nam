@@ -1,8 +1,0 @@
-LIST           7 mthp.out
-BTN           31 mthpbtn.dat
-ADV           32 mthpadv.dat
-DSP           33 mthpdsp.dat
-SSM           34 mthpssm.dat
-GCG           35 mthpgcg.dat
-MCP           64 mthpmcp.dat
-FTL           66 mt3d.flo

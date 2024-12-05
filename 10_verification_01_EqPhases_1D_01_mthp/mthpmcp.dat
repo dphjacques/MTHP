@@ -1,7 +1,0 @@
-         1         1         0         0       -1 #SPECIESFILE GLOBALFILE NHPFILE FTEMP BASENR
-chemistry\species.in
-chemistry\general.phr
-chemistry\groundwater.phr
-out\
-      0         1                                  #(chemistry number)      lay 1  
-      25.0
